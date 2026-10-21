@@ -8,6 +8,11 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 const BotaoJogarNovamente = document.querySelector(".novamente-btn")
+const BotaoIniciar = document.querySelector(".iniciar-btn");
+const TelaInicial = document.querySelector(".tela-inicial")
+
+.BotaoIniciar addEventListener('click' IniciaJogo);
+
 
 let atual = 0; 
 let perguntaAtual;
