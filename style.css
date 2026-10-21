@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap');
+
 :root{
     --cor-fundo:  #363636 ;
     --cor-principal:  #0c0c0c ;
@@ -9,6 +11,7 @@
 body{
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
+    font-family: "Libre Caslon Condensed", serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +30,10 @@ h1{
     color: var(--cor-destaque);
 }
 
+h1, caixa-perguntas, .caixa-resultado{
+    font-family: "Libre Caslon Condensed", serif;
+}
+
 button{
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
@@ -39,4 +46,18 @@ button{
 button:hover{
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
+}
+
+.caixa-alternativas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.caixa-resultado{
+    display: none;
+}
+
+.caixa-resultado.mostrar{
+    display: block;
 }
